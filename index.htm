@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+      <meta name=”mobile-web-app-capable” content="yes">
+      <meta name="description" content="version 1.0.0">
+      <meta name="author" content="DVRPC"> 
+      
+      <title>Next Stop Pottstown</title>
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+ 
+      <link rel="stylesheet" href="assets/css/main.css">    
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     
+      <!-- Upgrading the jquery and jquery UI verison with the latest CDN versions-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+ 
+    </head>
+  
+  <body>
+<!-- Start Main Body -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+
+                <div class="navbar-brand banner">
+                    <div class="wrapper">
+                      <a id="header-link" href="https://www.dvrpc.org" target="_blank"><img id="dvrpc-small-logo" src="assets/img/dvrpc_blue.svg" alt="dvrpc logo"/></a> 
+                      <span class="vertical-banner"></span>
+                     <a id="header-link" href="https://www.dvrpc.org/smartgrowth/" target="_blank"><img id="small-logo" src="assets/img/nsp_logo.png" alt="rvz logo"/></a>
+                     <!-- <p id="header-link-text">Next Stop Pottstown</p> -->
+             
+                    </div>
+                </div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <div class="nav navbar-nav navbar-right">
+                    <img id="about_icon" src="assets/img/about.svg" alt="about icon" onclick="$('#aboutModal').modal('show'); return false;"/>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class="row" id="container">
+      <iframe id="iframe_map" src="https://dvrpcgis.maps.arcgis.com/apps/instant/reporter/index.html?appid=23795890e9c0452384ba094ed473957a" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>iFrames are not supported on this page.</iframe>
+      
+      <div id="footer">
+        <p class="flip"><i id="hide"></i></p>
+       
+        <div id="footer_panel_og">
+          <div id="footer-title">Next Stop Pottstown</div>
+          <div class="footer-text-left">
+       
+          <p class="footer-text-left1">
+           <span class="footer_header">Learn More</span>
+            </br>
+            <a href="https://www.dvrpc.org/smartgrowth/" target="_blank" class="footer_links">Smart Growth</a>
+          </p>
+
+          <p class="footer-text-left2">
+            <span class="footer_header">Contact</span>
+            </br>
+            Andrew Svekla: <a href="mailto:asvekla@dvrpc.org" class="footer_links">asvekla@dvrpc.org</a>
+            <br/>
+            Manager, Smart Growth
+          </p>
+
+         </div>
+         <div class="footer-text-right">
+          <span class="dvrpc_logo d-logo"><a href="https://www.dvrpc.org" target="_blank"></a></span>
+          <span class="vertical-footer-right"></span>
+          <p>Product Number: <a href="https://www.dvrpc.org/products" target="_blank" class="footer_links">Coming Soon...</a></span>
+          </br>
+          <a href="https://www.dvrpc.org/Policies/" target="_blank" class="footer_links">DVRPC Policies & Data Disclaimer</a>
+          </br>
+          <a href="https://signup.e2ma.net/signup/1808352/1403728/" target="_blank" class="footer_links">Sign up for our email list</a></span>
+          </p>
+         </div>
+        
+           
+        </div>
+      </div>
+
+    </div>      
+  </div>
+
+</div>
+            <!-- About Modal -->
+        <div class="modal fade" id="aboutModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header"  style='border: none;'>
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"><B>Preparing for the Potential Return of Passenger Rail</B></h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="about_intro">
+                              <!-- <a href="https://www.dvrpc.org/transportation/safety/visionzero/" target="_blank"><img src="assets/img/nsp_logo.png" alt="RZV logo" class="nsp-full-logo"/></a> -->
+                              <p id="about_info">DVRPC is helping Pottstown and its planning partners prepare for the potential return of passenger rail service by studying local conditions and exploring strategies designed to make the Charles W. Dickinson Transportation Center, the location where trains would stop, more accessible to all users.
+                              </p>
+                            </div>
+                      
+                             <div id="more_info">
+                              </br>
+                              <p class="support_text">
+                                You can help us by using this mapping tool to identify locations where improvements could make walking, biking, taking transit, or driving safer or more convenient. 
+                              </p>
+                              <ol>
+                                <li>To begin, click the <b>“Submit a Comment”</b> button <i><b>(bottom left of map)</b></i>.</li>
+                                <li>Click the map to add a point where your transportation comment is located.</li>
+                                <li>Select the appropriate category for your comment from the following:
+                                  <ul class="list">
+                                <li class="item"> <img id="list_icon" src="assets/img/biking.png" alt="list icon"/><B>Biking:</B> Locations where biking is stressful or unsafe due to roadway conditions or the lack of bicycle infrastructure.</li>
+                                <li class="item"> <img id="list_icon" src="assets/img/walking.png" alt="list icon"/><B>Walking:</B> Locations where challenging intersections, sidewalk conditions, driver behavior, or other factors make walking difficult or uncomfortable. </li>
+                                <li class="item"> <img id="list_icon" src="assets/img/transit.png" alt="list icon"/><B>Taking Transit:</B> Locations where improvements to existing PART or SEPTA bus service or stops would enhance your transit experience.</li>
+                                <li class="item"> <img id="list_icon" src="assets/img/driving.png" alt="list icon"/><B>Driving:</B> Locations where roadway conditions, driver behavior, or parking considerations make driving challenging or unpleasant.</li>
+                                <li class="item"> <img id="list_icon" src="assets/img/other.png" alt="list icon"/><B>Other:</B> Please use this category to share other feedback on specific locations in the station area.</li>
+                              </ul>
+                                </li>
+                                <li>Add your comment and click the <B>“Submit”</B> button to share your feedback with the project team.</li>
+                              </ol>
+                              <p class="support_text">
+                                You can express support <img id="list_icon" src="assets/img/thumbs-up-24.svg" style="color:#808080;" alt="list icon"/> and/or leave comments <img id="list_icon" src="assets/img/speech-bubble-24.svg" style="color:#808080;" alt="list icon"/> on existing comments.<br>
+                                Comments will be accepted through 12/31/25.
+                              </p>
+                            </div>
+                            <div id="more_info2">
+                              <!-- <p>
+                                Besides viewing submitted traffic safety concerns, the map displays DVRPC's Regional High Injury Network, which identifies corridors with highest rates of fatalities and serious injuries per mile. Learn more about <a class="splash_link" href="https://dvrpcgis.maps.arcgis.com/apps/instant/sidebar/index.html?appid=8d22f881822e4044bbd7ee64900ac2f8" target="_new">DVRPC's Regional High Injury Network</a>. 
+                              </p>   -->
+                              <p>
+                               To learn more about efforts to bring passenger rail service back to Reading, Pottstown, and Phoenixville, visit the Schuylkill River Passenger Rail Authority (SRPRA) website at <a href="https://gosrpra.com" target="_blank" class="splash_link" style="font-size: 12px;">www.gosrpra.com</a> .
+                              </p>
+                            </div>
+                            <div id="contact_info">                           
+                              <p>To learn more about DVRPC's study and share your feedback, please email Andrew Svekla: <a href="mailto:asvekla@dvrpc.org" class="splash_link">asvekla@dvrpc.org</a>
+                               </p>
+                          </div> 
+
+                            <div id="about_footer">
+                              <span><a id="header-link" href="https://www.dvrpc.org" target="_blank"><img class="dvrpc-logo-full" src="assets/img/dvrpc_logo_full.svg" alt="dvrpc logo"/></a> </span>
+                              <p style="margin: 5px;">DVRPC serves strictly as an advisory agency. Any planning or design concepts as prepared by DVRPC are conceptual and may require engineering design and feasibility analysis. Actual authority for carrying out any planning proposals rest solely with the governing bodies of the states, local governments or authorities that have the primary responsibility to own, manage or maintain any transportation facility. 
+                            For more information, visit <a href="https://www.dvrpc.org/Policies/" target="_blank" class="splash_link" style="font-size: 12px;">DVRPC Policies & Data Disclaimer</a>.
+                            </p>
+                            </div>
+                            <div id="enter_map"><button type="button" class="btn btn-sm-map"<a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('hide'); return false;"><i class="fa fa-map" style="color:#fff"></i>&nbsp;&nbsp;<b>Enter Map</b></a>
+                            </div>
+                          
+                          </div>
+                       
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+  
+<script src="assets/js/app.js"></script>
+  
+<script>var _gaq = [['_setAccount', 'UA-9825778-1'], ['_trackPageview']];</script>
+<script async src="//www.google-analytics.com/ga.js"></script>
+
+<!-- End Main Body -->
+  </body>
+</html>
