@@ -244,12 +244,14 @@
     }
     #list_icon {
       width:30px;
+      height:30px;
       margin:0px 5px 0px 0px;
     }
     .item {
       padding: 0px 0px 5px 0px;
-      margin-left: 50px;
-      text-indent: -38px;
+      display:flex;
+      /* margin-left: 50px; */
+      /* text-indent: -38px; */
       margin-right: 10px;
     }
     #more_info_p {
