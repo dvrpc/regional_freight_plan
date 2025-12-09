@@ -236,11 +236,12 @@
     }
     .list {
       display: grid;
-      grid-template-rows: repeat(5, min-content);
+      grid-template-rows: repeat(4, min-content);
       grid-auto-flow: column;
       list-style-type: none;
       font-size:14px;
       padding: 5px 0px 5px 5px;
+      margin:8px 0px 0px 0px;
     }
     #list_icon {
       width:30px;
